@@ -1,0 +1,35 @@
+
+    <header>
+      <div class="container container-nav">
+         <div class="">
+          
+          <h1><i class="fa-solid fa-book-open-reader"></i>  Blogger's World</h1>
+            <p class="subtitle">One-stop destination for blogs</p>
+         </div>
+         <nav>
+            <ul>
+               <li><a href="" class="current-page">Home</a></li>
+               <li><a routerLink="signup">Sign up</a></li>
+               <li><a id="loginlink"onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Log in</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+   <div id='login-form'class='login-page'>
+    <div class='button-box'>
+        <button class='logout_btn' onclick="document.getElementById('login-form').style.display='none'" style="width:auto;"><<-- Back to page</button>
+    </div>
+    <form [formGroup]="loginform" (ngSubmit)='userverify()'>
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" formControlName='email' class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" formControlName='password' class="form-control" id="exampleInputPassword1">
+        </div>
+    
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    

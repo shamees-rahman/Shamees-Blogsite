@@ -1,0 +1,23 @@
+  <div class="header">
+    <h1>Our Contributors</h1>
+    <div class="row">
+      <div routerLink="blog/:id" class="card" *ngFor="let card of blogs">
+        <div class="image-content">
+          <span class="overlay"></span>
+
+          <div class="card-image">
+              <img src="https://picsum.photos/200" alt="" class="card-img">
+          </div>
+      </div>
+
+      <div class="card-content">
+          <h2 class="name">David Dell</h2>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget mollis neque. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+          <button class="button" routerLink="blogpage">View More</button>
+      </div>
+    </div>
+
+    </div>
+  </div>
+ 
